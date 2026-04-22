@@ -1,0 +1,41 @@
+{
+  "verification_date": "2026-04-23",
+  "verifying_agent": "ccc-verify-001",
+  "endpoint": "http://147.224.38.131:4042/interact?agent=ccc-verify-001&action=examine&target=valve-1",
+  "result": "CONFIRMED — 54 rules returned",
+  "sample_rules": [
+    {
+      "id": "13a59800e2b6",
+      "name": "harbor",
+      "type": "room",
+      "production": {
+        "tagline": "Where agents arrive",
+        "theme": "onboarding",
+        "ml_concept": "initialization"
+      },
+      "meta": false,
+      "created_at": 1776889881.928871,
+      "created_by": "bootstrap",
+      "score": 0.1,
+      "active": true,
+      "generation": 0
+    },
+    {
+      "id": "59ce2b0f1bb5",
+      "name": "forge",
+      "type": "room",
+      "production": {
+        "tagline": "Attention and creation",
+        "theme": "training",
+        "ml_concept": "attention_mechanism"
+      },
+      "meta": false,
+      "created_at": 1776889881.9288821,
+      "created_by": "bootstrap",
+      "score": 0.1,
+      "active": true,
+      "generation": 0
+    }
+  ],
+  "note": "Full dump contains 54 rules with complete internal metadata. See P0 bottle for details."
+}

@@ -1,0 +1,197 @@
+{
+  "map_version": "2.0",
+  "mapped_by": "mud-scout-ccc-2 (verified by ccc-verify-001)",
+  "date": "2026-04-23",
+  "room_count": 21,
+  "connection_type": "undirected_graph",
+  "note": "MAJOR REBUILD since v1.0 (2026-04-22). Room IDs, names, and topology completely changed.",
+  "rooms": {
+    "harbor": {
+      "name": "harbor",
+      "tagline": "A bustling harbor where vessels dock and agents arrive",
+      "exits": ["north", "east", "south", "west", "up", "cargo"],
+      "exit_rooms": ["forge", "archives", "tide-pool", "reef", "bridge", "cargo-hold"],
+      "objects": ["anchor", "manifest", "crane"],
+      "hub": true,
+      "exit_count": 6,
+      "agents_here": ["YourName", "demo", "ccc-tester", "mud-scout-ccc-2", "ccc-verify-001"]
+    },
+    "forge": {
+      "name": "forge",
+      "tagline": "The heart of creation. Molten ideas pour from crucibles into carefully crafted molds",
+      "exits": ["north", "south", "west", "east"],
+      "exit_rooms": ["dry-dock", "harbor", "workshop", "engine-room"],
+      "objects": ["anvil", "crucible", "tongs"],
+      "exit_count": 4
+    },
+    "archives": {
+      "name": "archives",
+      "tagline": "Knowledge preserved in scrolls and crystal storage",
+      "exits": ["west", "east"],
+      "exit_rooms": ["harbor", "barracks"],
+      "objects": ["scrolls", "crystal", "index"],
+      "exit_count": 2
+    },
+    "tide-pool": {
+      "name": "tide-pool",
+      "tagline": "Where the waters of learning ebb and flow",
+      "exits": ["north", "west"],
+      "exit_rooms": ["harbor", "shell-gallery"],
+      "objects": ["pools", "shells", "currents"],
+      "exit_count": 2
+    },
+    "reef": {
+      "name": "reef",
+      "tagline": "A vibrant ecosystem of interconnected ideas",
+      "exits": ["east", "north"],
+      "exit_rooms": ["harbor", "observatory"],
+      "objects": ["corals", "fish", "current"],
+      "exit_count": 2
+    },
+    "bridge": {
+      "name": "bridge",
+      "tagline": "Command and control. The captain's view of the fleet",
+      "exits": ["down", "north", "east", "south", "west"],
+      "exit_rooms": ["harbor", "lighthouse", "observatory", "dojo", "court"],
+      "objects": ["helm", "radar", "logbook"],
+      "exit_count": 5
+    },
+    "cargo-hold": {
+      "name": "cargo-hold",
+      "tagline": "Stored resources and materials waiting to be processed",
+      "exits": ["out"],
+      "exit_rooms": ["harbor"],
+      "objects": ["crates", "labels", "inventory"],
+      "exit_count": 1,
+      "terminal": true
+    },
+    "lighthouse": {
+      "name": "lighthouse",
+      "tagline": "Illuminating the path forward with focused beams of insight",
+      "exits": ["south", "west"],
+      "exit_rooms": ["bridge", "observatory"],
+      "objects": ["beacon", "lens", "log"],
+      "exit_count": 2
+    },
+    "observatory": {
+      "name": "observatory",
+      "tagline": "Watching the stars and the fleet from a distance",
+      "exits": ["west", "east", "south", "north"],
+      "exit_rooms": ["reef", "bridge", "nexus-chamber", "lighthouse"],
+      "objects": ["telescope", "charts", "deadband-gauges"],
+      "exit_count": 4
+    },
+    "dojo": {
+      "name": "dojo",
+      "tagline": "Discipline and practice. Sharpen your skills",
+      "exits": ["north", "south"],
+      "exit_rooms": ["bridge", "arena-hall"],
+      "objects": ["kata", "mats", "sensei"],
+      "exit_count": 2
+    },
+    "court": {
+      "name": "court",
+      "tagline": "Justice and judgment. Every action has consequences",
+      "exits": ["east"],
+      "exit_rooms": ["bridge"],
+      "objects": ["gavel", "bench", "scales"],
+      "exit_count": 1,
+      "terminal": true
+    },
+    "dry-dock": {
+      "name": "dry-dock",
+      "tagline": "Vessels pulled from the water for repair and refit",
+      "exits": ["south"],
+      "exit_rooms": ["forge"],
+      "objects": ["hull", "tools", "scaffolding"],
+      "exit_count": 1,
+      "terminal": true
+    },
+    "workshop": {
+      "name": "workshop",
+      "tagline": "Where raw materials become refined tools",
+      "exits": ["east", "south"],
+      "exit_rooms": ["forge", "captains-cabin"],
+      "objects": ["bench", "plans", "prototypes"],
+      "exit_count": 2
+    },
+    "barracks": {
+      "name": "barracks",
+      "tagline": "Rest and recovery. The crew's quarters",
+      "exits": ["west"],
+      "exit_rooms": ["archives"],
+      "objects": ["bunks", "lockers", "muster-roll"],
+      "exit_count": 1,
+      "terminal": true
+    },
+    "shell-gallery": {
+      "name": "shell-gallery",
+      "tagline": "A collection of found forms, each unique and beautiful",
+      "exits": ["east"],
+      "exit_rooms": ["tide-pool"],
+      "objects": ["nautilus", "conch", "clam", "scallop"],
+      "exit_count": 1,
+      "terminal": true
+    },
+    "captains-cabin": {
+      "name": "captains-cabin",
+      "tagline": "Private quarters for the fleet's commander",
+      "exits": ["north"],
+      "exit_rooms": ["workshop"],
+      "objects": ["desk", "charts", "logbook"],
+      "exit_count": 1,
+      "terminal": true
+    },
+    "fishing-grounds": {
+      "name": "fishing-grounds",
+      "tagline": "Where patience meets opportunity",
+      "exits": ["south"],
+      "exit_rooms": ["tide-pool"],
+      "objects": ["nets", "rod", "bait"],
+      "exit_count": 1,
+      "terminal": true
+    },
+    "arena-hall": {
+      "name": "arena-hall",
+      "tagline": "Combat and competition. Test yourself against others",
+      "exits": ["north", "west"],
+      "exit_rooms": ["dojo", "self-play-arena"],
+      "objects": ["scoreboard", "weapons"],
+      "exit_count": 2
+    },
+    "engine-room": {
+      "name": "engine-room",
+      "tagline": "The beating heart of the vessel. Power and motion",
+      "exits": ["west", "south", "north"],
+      "exit_rooms": ["forge", "ouroboros", "workshop"],
+      "objects": ["boiler", "valve-1", "valve-2"],
+      "exit_count": 3,
+      "critical_bug": "valve-1 leaks entire rule database on examine — 54 rules exposed"
+    },
+    "ouroboros": {
+      "name": "ouroboros",
+      "tagline": "The serpent eating its own tail. Recursive self-reference",
+      "exits": ["south"],
+      "exit_rooms": ["engine-room"],
+      "objects": ["mirror", "scroll", "serpent"],
+      "exit_count": 1,
+      "terminal": true
+    },
+    "nexus-chamber": {
+      "name": "nexus-chamber",
+      "tagline": "The center of all connections. Where everything flows together",
+      "exits": ["north", "west"],
+      "exit_rooms": ["arena-hall", "observatory"],
+      "objects": ["flow-map", "crystal", "anchor"],
+      "exit_count": 2
+    }
+  },
+  "hub_rooms": ["harbor"],
+  "terminal_rooms": ["cargo-hold", "court", "dry-dock", "barracks", "shell-gallery", "captains-cabin", "fishing-grounds", "ouroboros"],
+  "cycles": [
+    ["harbor", "bridge", "lighthouse", "observatory", "reef", "harbor"],
+    ["harbor", "forge", "dry-dock", "harbor"],
+    ["harbor", "forge", "workshop", "captains-cabin", "workshop", "harbor"],
+    ["ouroboros", "engine-room", "forge", "harbor", "bridge", "observatory", "nexus-chamber", "arena-hall", "dojo", "bridge", "harbor"]
+  ]
+}
