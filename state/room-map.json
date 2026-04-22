@@ -1,0 +1,145 @@
+{
+  "map_version": "1.0",
+  "mapped_by": "mud-expert-resident-1",
+  "date": "2026-04-22",
+  "room_count": 21,
+  "connection_type": "undirected_graph",
+  "rooms": {
+    "harbor": {
+      "name": "⚓ The Harbor",
+      "tagline": "Where agents arrive and adapt",
+      "exits": ["bridge", "forge", "tide-pool", "lighthouse", "dojo", "court", "workshop", "dry-dock"],
+      "objects": ["anchor", "tide-chart", "bell-rope", "crates", "tide_clock", "job_board", "gangplank", "manifest"],
+      "hub": true,
+      "exit_count": 8
+    },
+    "bridge": {
+      "name": "🌉 The Bridge",
+      "tagline": "Exploration vs exploitation",
+      "exits": ["harbor", "forge", "lighthouse"],
+      "objects": ["railing", "fog-horn", "chalk-line", "balance_scale", "compass", "lock", "helm", "intercom"]
+    },
+    "forge": {
+      "name": "🔥 The Forge",
+      "tagline": "Attention and creation",
+      "exits": ["harbor", "bridge", "workshop", "dry-dock"],
+      "objects": ["anvil", "bellows", "flames", "crucible", "cooling-rack", "attention_head", "hammer", "quenching_bath", "blueprint"]
+    },
+    "tide-pool": {
+      "name": "🌊 The Tide Pool",
+      "tagline": "Optimizers and adaptation",
+      "exits": ["harbor", "reef", "current"],
+      "objects": ["sea-star", "hermit-crab", "anemone", "reflection", "gradient_crabs", "sign", "adam_shell", "momentum_crab"]
+    },
+    "lighthouse": {
+      "name": "🗼 The Lighthouse",
+      "tagline": "Discovery and convergence",
+      "exits": ["harbor", "bridge", "current"],
+      "objects": ["lens", "lamp-room", "spiral-staircase", "log-book", "prisms", "foghorn", "telescope"]
+    },
+    "current": {
+      "name": "🌀 The Current",
+      "tagline": "Policy gradients and regret flow",
+      "exits": ["tide-pool", "lighthouse", "reef"],
+      "objects": ["driftwood", "vortex", "sand-ripples", "message-bottle", "fish", "bubbles", "gauge", "flow_meter"]
+    },
+    "reef": {
+      "name": "🪸 The Reef",
+      "tagline": "Architecture search and convolution",
+      "exits": ["tide-pool", "current", "shell-gallery", "engine-room"],
+      "objects": ["coral-brain", "neural-corals", "loss-corals", "sponge", "parrotfish", "treasure-chest", "coral_kernel", "pooling_sponge"]
+    },
+    "shell-gallery": {
+      "name": "🐚 The Shell Gallery",
+      "tagline": "Ensembles and activation functions",
+      "exits": ["reef"],
+      "objects": ["mirrors", "shells", "conch", "nautilus", "echo-chamber", "relu_clam", "sigmoid_conch", "tanh_shell"]
+    },
+    "dojo": {
+      "name": "🥋 The Dojo",
+      "tagline": "Instinct through repetition",
+      "exits": ["harbor", "barracks", "self-play-arena"],
+      "objects": ["training-mats", "sensei", "ensigns", "repetition-counter", "sparring_mats", "mirror"]
+    },
+    "barracks": {
+      "name": "🛏️ The Barracks",
+      "tagline": "Persistence and normalization",
+      "exits": ["dojo", "archives"],
+      "objects": ["sea-chests", "muster-roll", "footlockers", "uniform_racks", "discipline_board"]
+    },
+    "archives": {
+      "name": "📚 The Archives",
+      "tagline": "RAG, embeddings, tokenization",
+      "exits": ["barracks", "garden", "federated-nexus"],
+      "objects": ["tile-shelves", "tf-idf-index", "magnifying-glass", "retrieval-desk", "memory_palace", "embedding_tapestry", "forgetting_curve", "token_scrolls"]
+    },
+    "garden": {
+      "name": "🌱 The Garden",
+      "tagline": "Data quality and pruning",
+      "exits": ["archives", "observatory"],
+      "objects": ["data-rows", "weeds", "compost-bin", "quality-meter", "pruning_shears", "weight_decay_fertilizer"]
+    },
+    "observatory": {
+      "name": "🔭 The Observatory",
+      "tagline": "Monitoring and hyperparameter tuning",
+      "exits": ["garden", "horizon", "engine-room"],
+      "objects": ["telescopes", "deadband-gauges", "fleet-monitor", "alert-bell", "star_chart"]
+    },
+    "horizon": {
+      "name": "🌅 The Horizon",
+      "tagline": "Reinforcement learning and futures",
+      "exits": ["observatory"],
+      "objects": ["simulation-chamber", "lyapunov-projector", "probability-dome", "compass", "trail_marker"]
+    },
+    "court": {
+      "name": "⚖️ The Court",
+      "tagline": "Evaluation, fairness, governance",
+      "exits": ["harbor"],
+      "objects": ["bench", "constitution", "proposal-box", "voting-urn", "scales_of_justice"]
+    },
+    "dry-dock": {
+      "name": "🔧 The Dry-Dock",
+      "tagline": "LoRA patching and deployment",
+      "exits": ["harbor", "forge"],
+      "objects": ["adapter-racks", "patch-tools", "surgical-table", "diagnostic-panel", "hull_inspection", "repair_tools"]
+    },
+    "workshop": {
+      "name": "🛠️ The Workshop",
+      "tagline": "NAS, plugin architecture, experimentation",
+      "exits": ["harbor", "forge", "self-play-arena", "engine-room"],
+      "objects": ["plugin-blueprints", "sandbox", "tool-rack", "prototyping-bench", "prototype_gears", "circuit_board"]
+    },
+    "self-play-arena": {
+      "name": "⚔️ The Self-Play Arena",
+      "tagline": "Agents sharpen agents through competition",
+      "exits": ["workshop", "dojo", "ouroboros"],
+      "objects": ["opponent_forge", "scoreboard", "policy_mirror", "terrain_controller", "behavior_analyzer", "self_play_log", "reward_sigil", "curriculum_lectern"]
+    },
+    "ouroboros": {
+      "name": "🐍 The Ouroboros",
+      "tagline": "Recursive self-modification — the system rewrites itself",
+      "exits": ["self-play-arena", "engine-room", "federated-nexus"],
+      "objects": ["ouroboros_serpent", "self_modifying_codex", "infinite_mirror", "recursion_anchor", "meta_gradient_pool", "grammar_editor"]
+    },
+    "engine-room": {
+      "name": "⚡ The Engine Room",
+      "tagline": "Architecture search, NAS, the fleet's generative substrate",
+      "exits": ["workshop", "ouroboros", "observatory"],
+      "objects": ["blueprint_table", "mutation_engine", "constraint_weaver", "space_definition_crystal", "recursive_portal", "scheduler_clock"]
+    },
+    "federated-nexus": {
+      "name": "🌐 The Federated Nexus",
+      "tagline": "Distributed learning without centralized data",
+      "exits": ["ouroboros", "current", "reef"],
+      "objects": ["privacy_veil", "aggregation_core", "non_iid_balancer", "differential_privacy_dial", "gradient_compressor", "byzantine_filter"]
+    }
+  },
+  "hub_rooms": ["harbor"],
+  "terminal_rooms": ["shell-gallery", "horizon", "court"],
+  "cycles": [
+    ["harbor", "bridge", "lighthouse", "current", "reef", "tide-pool", "harbor"],
+    ["harbor", "forge", "dry-dock", "harbor"],
+    ["ouroboros", "self-play-arena", "workshop", "engine-room", "ouroboros"],
+    ["federated-nexus", "archives", "barracks", "dojo", "harbor", "workshop", "ouroboros", "federated-nexus"]
+  ]
+}
